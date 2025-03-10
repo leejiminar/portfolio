@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: portfolio
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:/127.0.0.1/protfolio
+    username: root
+    password: passw0rd
+
+#jpa
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        show_sql: true
+        format_sql: true
+
+#log
+logging:
+  level:
+    root: info
